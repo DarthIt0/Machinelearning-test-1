@@ -10,7 +10,7 @@
                 const surface = {name: 'show.history live', tab: 'Training'};
                 const history = []; 
                 await model.fit(xs, ys, {
-                    epochs:500,
+                    epochs:1000,
                     callbacks: {
                         onEpochEnd: async(epoch, logs) =>{
                             history.push(logs);
@@ -39,7 +39,7 @@
 <body>
     <h1>Machine Learning - Test 1</h1>
     <h2>Function: y = 2z - 1</h2>
-    <h2>Predicted value of 'z = 10' will appear after 500 epochs ended, here ---></h2>
+    <h2>Predicted value of 'z = 10' will appear after 1000 epochs ended, here ---></h2>
     <h2>The result should be close to (20 - 1) = 19 !!!</h2>
     <h2>Neural net model, epoch and loss also available -> Developers tools -> Console</h2>
     <h2>By Luine Ito Madeira de Ley</h2>
